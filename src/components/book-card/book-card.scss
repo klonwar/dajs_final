@@ -1,0 +1,51 @@
+.BookCard {
+  overflow: hidden;
+  word-wrap: break-word;
+
+  padding: $padding-small;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 0 10px 0 rgba(#333, 0.1);
+  font-size: 0.9rem;
+  background: $white;
+
+  &--read {
+    background: #E8F5E9;
+  }
+
+  & + & {
+    margin-top: $margin-small;
+  }
+
+  &-title {
+    font-weight: bold;
+  }
+
+  &-title, &-subtitle {
+    display: inline-block;
+  }
+
+  &-subtitle {
+    font-size: 0.7rem;
+    color: $text-color-secondary;
+  }
+
+  &-author {
+    margin-top: 5px;
+    font-style: italic;
+
+    &:before {
+      content: 'By ';
+    }
+  }
+
+  &--active {
+    background: $primary;
+    color: $white;
+
+    .BookCard-subtitle {
+      color: $text-color-secondary-inverse;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+$breakpoint-small: 640px; // Phone landscape
+$breakpoint-medium: 960px; // Tablet Landscape
+$breakpoint-large: 1200px; // Desktop
+
+
+$red: #F44336;
+
+$primary: #3F51B5;
+$primary-dark: #283593;
+
+$white: #FFFFFF;
+$white-blue: #E8EAF6;
+
+$text-color: #333;
+$text-color-secondary: lighten($text-color, 30%);
+$text-color-secondary-inverse: darken($white, 20%);
+
+$padding-small: 15px;
+$padding-medium: 30px;
+$padding-large: 60px;
+
+$margin-small: 10px;
+$margin-medium: 20px;
+$margin-large: 40px;

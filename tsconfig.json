@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./temp-dist/",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "paths": {
+      "#components/*": ["src/components/*"],
+      "#src/*": ["src/*"],
+      "#client/*": ["*"],
+    },
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  }
+}

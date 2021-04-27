@@ -1,0 +1,29 @@
+.SearchFooter {
+
+  box-shadow: 0 0 10px 0 rgba(#333, 0.2);
+  margin-top: $margin-small;
+  font-size: 0.75rem;
+  display: flex;
+
+  &-info {
+    @extend %width-expand;
+    padding: $padding-small;
+    & > span {
+      display: block;
+    }
+  }
+
+  &-button {
+    @extend %button;
+
+    border: 0;
+    padding: 0 $padding-small*1.5;
+    background: $white;
+    font-size: 1rem;
+
+    &:hover:not(:disabled) {
+      background: $primary;
+      color: $white;
+    }
+  }
+}

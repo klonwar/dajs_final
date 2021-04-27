@@ -1,0 +1,18 @@
+.LanguagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+
+  &-item {
+    border: 1px solid $white-blue;
+    background: $white-blue;
+    color: $text-color;
+    padding: 2px 5px;
+
+    margin-top: $margin-small;
+
+    &:not(:last-child) {
+      margin-right: $margin-small;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.BooksList {
+  @extend %custom-scrollbar;
+
+  position: relative;
+  overflow: auto;
+  padding: $padding-small/2 $padding-small;
+  height: 100%;
+  user-select: none;
+
+
+  &-linksContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-link {
+    text-decoration: none;
+    padding-top: $padding-small;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-card {
+    cursor: pointer;
+  }
+}

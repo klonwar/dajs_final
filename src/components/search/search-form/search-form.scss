@@ -1,0 +1,33 @@
+.SearchForm {
+  display: flex;
+  padding: $padding-small;
+  box-shadow: 0 0 10px 0 rgba(#333, 0.2);
+  margin-bottom: $margin-small;
+
+  &-input {
+    @extend %width-expand;
+    padding: $padding-small / 2;
+    margin-right: $padding-small;
+
+    &--error {
+      border-color: $red;
+      color: $red;
+
+      &::placeholder {
+        color: darken($red, 20%);
+      }
+    }
+  }
+
+  &-button {
+    @extend %button;
+
+    background: $primary;
+    color: $white;
+    padding: $padding-small / 2 $padding-small;
+
+    &:hover {
+      background: $primary-dark;
+    }
+  }
+}
